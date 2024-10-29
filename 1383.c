@@ -66,19 +66,12 @@ int main(){
             }
         }
         if(verificaLinhaColuna(MAT) && verifica3x3(MAT)){
-            instancia[i]=1;
+            printf("Instancia %d\nSIM\n", i+1);
         }
         else{
-            instancia[i]=0;
+            printf("Instancia %d\nNAO\n", i+1);
         }
     }
-    for(i=0 ; i<numMatrizes ; i++){
-        if(instancia[i]==1){
-            printf("Instancia %d\nSIM\n\n", i+1);
-        }
-        else{
-            printf("Instancia %d\nNAO\n\n", i+1);
-        }
-    }
+
     return 0;
 }
