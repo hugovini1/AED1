@@ -44,8 +44,14 @@ void removerId(No **fila, No **ultimo, int ide){
 }
 
 void imprimirFila(No *fila){
+    int cont=1;
+    while(cont){
+        printf("%d", fila->id);
+        fila = fila->proximo;
+        cont=0;
+    }
     while(fila){
-        printf("%d ", fila->id);
+        printf(" %d", fila->id);
         fila = fila->proximo;
     }
     printf("\n");
